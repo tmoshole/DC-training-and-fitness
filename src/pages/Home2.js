@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import Home2Banner from "../components/Home2Banner";
 import FitnessGoal from "../components/FitnessGoal";
 import Counter from "../components/Counter";
-import AboutServices from "../components/AboutServices";
 import { IMAGES } from "../constants/theme";
 import OurServices from "../components/OurServices";
-import VideoBox from "../elements/VideoBox";
 import Testimonial from "../components/Testimonial";
 import { useLocation } from "react-router-dom";
 import ContactUs from "./ContactUs";
 import WeightCalculator from "./WeightCalculator";
+import LatestSlider from "../elements/LatestSlider";
+import PerfectTrainers from "../components/PerfectTrainers";
 
 const Home2 = () => {
   const body = document.querySelector("body");
@@ -33,9 +33,11 @@ const Home2 = () => {
         <section className="section">
           <Counter />
         </section>
-        <section className="about-bx4 content-inner-2">
+        <section className="content-inner about-wrapper1 about-bx1">
           <div className="container">
-            <AboutServices />
+            <div className="row align-items-center">
+              <PerfectTrainers />
+            </div>
           </div>
         </section>
         <section
@@ -65,15 +67,11 @@ const Home2 = () => {
           </div>
         </section>
         <section
-          className="content-inner-1 video-bx6 overlay-black-dark bg-img-fix"
-          style={{
-            backgroundImage: `url(${IMAGES.BackgroundBg1})`,
-            backgroundSize: " cover",
-          }}
+          id="gallery"
+          className="content-inner-1 overflow-hidden"
+          style={{ backgroundImage: "url(" + IMAGES.BgImage1 + ")" }}
         >
-          <div className="container">
-            <VideoBox open={setOpen} />
-          </div>
+          <LatestSlider />
         </section>
         <section
           id="testimonials"

@@ -53,7 +53,7 @@ export const IMAGES = {
   services3: require("../assets/images/services/pic3.jpg"),
   services4: require("../assets/images/services/pic4.jpg"),
 
-  aboutgirl: require("../assets/images/about/girl.png"),
+  aboutgirl: require("../assets/images/about/girl.jpeg"),
   aboutman: require("../assets/images/about/man.png"),
   boxpic1: require("../assets/images/about/image-box/pic1.png"),
   boxpic2: require("../assets/images/about/image-box/pic22.png"),

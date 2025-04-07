@@ -121,7 +121,7 @@ const Footer2 = () => {
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">
                 <div className="widget widget_locations">
-                  <h4 className="footer-title">Locations</h4>
+                  <h4 className="footer-title">Location</h4>
                   <div className="clearfix">
                     <h6>Johannesburg</h6>
                     <p>Sandton, Gauteng, 2196</p>

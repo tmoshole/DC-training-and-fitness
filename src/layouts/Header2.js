@@ -11,9 +11,17 @@ const Header2 = () => {
   useEffect(() => {
     const handleScroll = () => {
       setHeaderFix(window.scrollY > 50);
-      
+
       // Detect which section is currently in view
-      const sections = ['home', 'about', 'services', 'testimonials', 'calculator', 'contact'];
+      const sections = [
+        "home",
+        "about",
+        "services",
+        "gallery",
+        "testimonials",
+        "calculator",
+        "contact",
+      ];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -49,22 +57,22 @@ const Header2 = () => {
           <div className="container clearfix">
             {/* Website Logo */}
             <div className="logo-header mostion logo-light">
-              <Link 
-                to="home" 
-                spy={true} 
-                smooth={true} 
-                duration={500} 
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
                 className="cursor-pointer"
               >
                 <img src={IMAGES.logoWhite} alt="DC Training Logo" />
               </Link>
             </div>
             <div className="logo-header mostion logo-dark">
-              <Link 
-                to="home" 
-                spy={true} 
-                smooth={true} 
-                duration={500} 
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
                 className="cursor-pointer"
               >
                 <img src={IMAGES.logo} alt="DC Training Logo" />
@@ -93,7 +101,7 @@ const Header2 = () => {
               }`}
             >
               <ul className="nav navbar-nav navbar navbar-left">
-                <li className={activeSection === 'home' ? 'active' : ''}>
+                <li className={activeSection === "home" ? "active" : ""}>
                   <Link
                     to="home"
                     spy={true}
@@ -104,7 +112,7 @@ const Header2 = () => {
                     Home
                   </Link>
                 </li>
-                <li className={activeSection === 'about' ? 'active' : ''}>
+                <li className={activeSection === "about" ? "active" : ""}>
                   <Link
                     to="about"
                     spy={true}
@@ -116,7 +124,7 @@ const Header2 = () => {
                     About
                   </Link>
                 </li>
-                <li className={activeSection === 'services' ? 'active' : ''}>
+                <li className={activeSection === "services" ? "active" : ""}>
                   <Link
                     to="services"
                     spy={true}
@@ -128,7 +136,21 @@ const Header2 = () => {
                     Services
                   </Link>
                 </li>
-                <li className={activeSection === 'testimonials' ? 'active' : ''}>
+                <li className={activeSection === "gallery" ? "active" : ""}>
+                  <Link
+                    to="gallery"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    onClick={handleNavClick}
+                  >
+                    Gallery
+                  </Link>
+                </li>
+                <li
+                  className={activeSection === "testimonials" ? "active" : ""}
+                >
                   <Link
                     to="testimonials"
                     spy={true}
@@ -140,7 +162,7 @@ const Header2 = () => {
                     Testimonials
                   </Link>
                 </li>
-                <li className={activeSection === 'calculator' ? 'active' : ''}>
+                <li className={activeSection === "calculator" ? "active" : ""}>
                   <Link
                     to="calculator"
                     spy={true}
@@ -152,7 +174,7 @@ const Header2 = () => {
                     BMI Calculator
                   </Link>
                 </li>
-                <li className={activeSection === 'contact' ? 'active' : ''}>
+                <li className={activeSection === "contact" ? "active" : ""}>
                   <Link
                     to="contact"
                     spy={true}

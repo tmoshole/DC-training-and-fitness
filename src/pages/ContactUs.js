@@ -27,7 +27,7 @@ const ContactUs = () => {
     Swal.fire({
       title: "Good job!",
       text: "form successfuly submmited",
-      icon: "success"
+      icon: "success",
     });
   };
   return (
@@ -48,8 +48,8 @@ const ContactUs = () => {
                       <li>
                         <i className="fa-solid fa-location-dot"></i>
                         <p>
-                          832 Thompson Drive, San Fransisco CA 94107, United
-                          States
+                          2 centre Road morningside, Sandton, Johannesburg,
+                          South Africa
                         </p>
                       </li>
                       <li>
@@ -62,7 +62,7 @@ const ContactUs = () => {
                       </li>
                     </ul>
                   </div>
-                  
+
                   <svg
                     width="250"
                     height="70"
