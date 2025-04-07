@@ -75,7 +75,7 @@ const Header2 = () => {
                 duration={500}
                 className="cursor-pointer"
               >
-                <img src={IMAGES.logo} alt="DC Training Logo" />
+                <img src={IMAGES.logoWhite} alt="DC Training Logo" />
               </Link>
             </div>
 

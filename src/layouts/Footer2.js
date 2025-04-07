@@ -16,7 +16,7 @@ const Footer2 = () => {
                     <Link to={"/"}>
                       <img
                         className="select_logo_white"
-                        src={IMAGES.logoWhite2}
+                        src={IMAGES.logoWhite}
                         alt=""
                       />
                     </Link>
