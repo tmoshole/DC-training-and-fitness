@@ -43,22 +43,45 @@ const ContactUs = () => {
                     Fill up the form and my Team will get back to you within 24
                     hours.
                   </p>
-                  <div className="widget widget_getintuch ">
+                  <div className="widget widget_getintuch">
                     <ul>
                       <li>
                         <i className="fa-solid fa-location-dot"></i>
                         <p>
-                          2 centre Road morningside, Sandton, Johannesburg,
-                          South Africa
+                          <a
+                            href="https://maps.app.goo.gl/FXEhJmgeU6rgDFRA7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="contact-link address-link"
+                          >
+                            2 Centre Road, Morningside, Sandton, Johannesburg,
+                            South Africa
+                          </a>
                         </p>
                       </li>
                       <li>
-                        <i className="fa-solid fa-phone"></i>
-                        <p>+27 84 566 6271</p>
+                        <i className="fa-solid fa-envelope"></i>
+                        <p>
+                          <a
+                            href="mailto:info@dctrainingandfitness.co.za"
+                            className="contact-link email-link"
+                          >
+                            info@dctrainingandfitness.co.za
+                          </a>
+                        </p>
                       </li>
                       <li>
-                        <i className="fa-solid fa-envelope"></i>
-                        <p>info@dctrainingandfitness.co.za</p>
+                        <i className="fa-brands fa-whatsapp"></i>
+                        <p>
+                          <a
+                            href="https://wa.me/27845666271"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="whatsapp-link"
+                          >
+                            +27 84 566 6271
+                          </a>
+                        </p>
                       </li>
                     </ul>
                   </div>

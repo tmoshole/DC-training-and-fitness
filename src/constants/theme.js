@@ -30,7 +30,7 @@ export const IMAGES = {
   logo1: require("../assets/images/logo/logo1.png"),
   logo2: require("../assets/images/logo/logo2.png"),
   logo3: require("../assets/images/logo/logo3.png"),
-  logoWhite: require("../assets/images/logo-full-white.png"),
+  logoWhite: require("../assets/images/logo-full-2.png"),
   logoWhite2: require("../assets/images/logo-white-2.png"),
   imgLogo2: require("../assets/images/logo-2.png"),
 
@@ -160,7 +160,10 @@ export const IMAGES = {
   testimonialPic5: require("../assets/images/testimonials/pic5.jpg"),
   testimonialPic6: require("../assets/images/testimonials/pic6.jpg"),
 
-  largeTestimonialPic7: require("../assets/images/testimonials/extralaarge/pic7.png"),
+  largeTestimonialPic1: require("../assets/images/testimonials/extralaarge/pic1.jpeg"),
+  largeTestimonialPic2: require("../assets/images/testimonials/extralaarge/pic2.jpeg"),
+  largeTestimonialPic3: require("../assets/images/testimonials/extralaarge/pic3.jpeg"),
+  largeTestimonialPic4: require("../assets/images/testimonials/extralaarge/pic4.jpeg"),
 
   avatarLargePic1: require("../assets/images/avatar/large/avatar1.png"),
   avatarLargePic2: require("../assets/images/avatar/large/avatar2.jpeg"),

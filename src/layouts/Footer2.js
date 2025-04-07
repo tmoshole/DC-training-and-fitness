@@ -22,7 +22,7 @@ const Footer2 = () => {
                     </Link>
                   </div>
                   <p>Serenity through strength—earn your calm.</p>
-                  <h6 className="m-b15">My Socials</h6>
+                  {/* <h6 className="m-b15">My Socials</h6>
                   <div className="dz-social-icon style-1">
                     <ul>
                       <li>
@@ -55,14 +55,14 @@ const Footer2 = () => {
                       <li>
                         <Link
                           target="_blank"
-                          to="https://www.whatsapp.com/"
+                          to="www.linkedin.com/in/darlington-masuku-432ab035a"
                           rel="noreferrer"
                         >
                           <i className="fa-brands fa-linkedin"></i>
                         </Link>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-xl-3 col-md-4 wow fadeInUp">

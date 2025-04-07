@@ -13,26 +13,26 @@ const PerfectTrainers = () => {
   return (
     <>
       <div className="col-lg-6 m-b30">
-        <div className="dz-media ">
-          <img
+        <div className="dz-media  m-t100">
+          {/* <img
             src={IMAGES.aboutgirl}
             alt=""
             className="wow fadeInUp"
             data-wow-delay="0.6s"
-          />
-          {SVGICON.multilines}
-          <ul>
+          /> */}
+          {/* {SVGICON.multilines} */}
+          <ul className="m-t30">
             <li>
               <span>FITNESS</span>
             </li>
             <li>
               <span>HEALTH</span>
             </li>
-            <li></li>
+            {/* <li></li> */}
           </ul>
         </div>
       </div>
-      <div className="col-lg-6 m-b30 about-content">
+      <div className="col-lg-6 m-b30 m-t20 about-content">
         <div className="section-head">
           <span className="sub-title wow fadeInUp" data-wow-delay="0.2s">
             Get Your Perfect Workout
