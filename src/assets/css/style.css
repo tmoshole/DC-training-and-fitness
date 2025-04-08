@@ -24501,7 +24501,9 @@ pre {
 .contact-section.style-2 .form-control::placeholder, .contact-section.style-2 .wp-block-categories-dropdown select::placeholder, .wp-block-categories-dropdown .contact-section.style-2 select::placeholder,
 .contact-section.style-2 .wp-block-archives-dropdown select::placeholder, .wp-block-archives-dropdown .contact-section.style-2 select::placeholder {
   color: #fff !important; }
-
+.contact-box a {
+  text-decoration: underline;
+}
 .under-construction {
   overflow: hidden;
   padding: 100px;

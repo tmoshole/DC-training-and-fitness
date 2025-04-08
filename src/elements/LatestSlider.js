@@ -8,20 +8,34 @@ import "swiper/css/pagination";
 
 const dataBlog = [
   {
-    image1: IMAGES.bloggrid1,
-    image2: IMAGES.avatar1,
+    image1: IMAGES.gallery,
   },
   {
-    image1: IMAGES.bloggrid2,
-    image2: IMAGES.avatar2,
+    image1: IMAGES.gallery1,
   },
   {
-    image1: IMAGES.bloggrid3,
-    image2: IMAGES.avatar3,
+    image1: IMAGES.gallery2,
   },
   {
-    image1: IMAGES.bloggrid4, // Add more images as needed
-    image2: IMAGES.avatar4,
+    image1: IMAGES.gallery3,
+  },
+  {
+    image1: IMAGES.gallery4,
+  },
+  {
+    image1: IMAGES.gallery5,
+  },
+  {
+    image1: IMAGES.gallery6,
+  },
+  {
+    image1: IMAGES.gallery7,
+  },
+  {
+    image1: IMAGES.gallery8,
+  },
+  {
+    image1: IMAGES.gallery9,
   },
 ];
 
