@@ -37,6 +37,15 @@ const dataBlog = [
   {
     image1: IMAGES.gallery9,
   },
+  {
+    image1: IMAGES.gallery10,
+  },
+  {
+    image1: IMAGES.gallery11,
+  },
+  {
+    image1: IMAGES.gallery12,
+  },
 ];
 
 function LatestSlider() {
