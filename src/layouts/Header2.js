@@ -17,7 +17,7 @@ const Header2 = () => {
         "home",
         "about",
         "services",
-        // "gallery",
+        "gallery",
         "testimonials",
         "calculator",
         "contact",
@@ -82,12 +82,14 @@ const Header2 = () => {
             
             .logo-header {
               flex: 0 0 auto;
+              margin-right: 20px; /* Move logo to the left by adding right margin */
             }
             
             .navigation-container {
               flex: 1;
               display: flex;
               justify-content: center;
+              margin-left: -40px; /* Move nav links to the left */
             }
             
             .desktop-social-icons {
@@ -126,6 +128,53 @@ const Header2 = () => {
               justify-content: center;
               margin: 15px 0 0;
             }
+
+            /* Mobile specific layout */
+          @media (max-width: 991px) {
+            .desktop-social-icons {
+              display: none;
+            }
+            
+            .mobile-social-icons {
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              margin: 15px 0 0;
+            }
+
+            /* Make sure the mobile active link color has higher specificity */
+            .nav.navbar-nav li.active a {
+              color: #ff8139 !important;
+              font-weight: bold;
+              position: relative;
+            }
+
+            .nav.navbar-nav li.active a::after {
+              content: '';
+              position: absolute;
+              bottom: -2px;
+              left: 0;
+              width: 100%;
+              height: 2px;
+              background-color: #ff8139;
+            }
+          }
+
+          /* Active link indicator styles for both mobile and desktop */
+          .nav.navbar-nav li.active a {
+            color: #ff8139;
+            font-weight: 600;
+            position: relative;
+          }
+
+          .nav.navbar-nav li.active a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #ff8139;
           }
         `}
       </style>
@@ -226,7 +275,7 @@ const Header2 = () => {
                         Services
                       </Link>
                     </li>
-                    {/* <li className={activeSection === "gallery" ? "active" : ""}>
+                    <li className={activeSection === "gallery" ? "active" : ""}>
                       <Link
                         to="gallery"
                         spy={true}
@@ -237,7 +286,7 @@ const Header2 = () => {
                       >
                         Gallery
                       </Link>
-                    </li> */}
+                    </li>
                     <li
                       className={
                         activeSection === "testimonials" ? "active" : ""
@@ -328,7 +377,7 @@ const Header2 = () => {
               </div>
 
               {/* Desktop Social Icons - Far right position */}
-              <div className="desktop-social-icons social-media-icons">
+              {/* <div className="desktop-social-icons social-media-icons">
                 <div className="dz-social-icon style-1">
                   <ul>
                     <li>
@@ -369,7 +418,7 @@ const Header2 = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -83,8 +83,8 @@ export const IMAGES = {
   portfolio7: require("../assets/images/portfolio/pic7.jpg"),
 
   // gallery images
-  gallery: require("../assets/images/gallery/pic6.jpeg"),
-  gallery1: require("../assets/images/gallery/pic1.jpeg"),
+  // gallery: require("../assets/images/gallery/pic6.jpeg"),
+  gallery1: require("../assets/images/gallery/pic1.png"),
   gallery2: require("../assets/images/gallery/pic2.jpeg"),
   gallery3: require("../assets/images/gallery/pic3.jpeg"),
   gallery4: require("../assets/images/gallery/pic4.png"),
@@ -96,6 +96,13 @@ export const IMAGES = {
   gallery10: require("../assets/images/gallery/pic10.jpeg"),
   gallery11: require("../assets/images/gallery/pic11.jpeg"),
   gallery12: require("../assets/images/gallery/pic4.jpeg"),
+  gallery13: require("../assets/images/gallery/pic13.jpeg"),
+  gallery14: require("../assets/images/gallery/pic14.jpeg"),
+  gallery15: require("../assets/images/gallery/pic15.jpeg"),
+  gallery16: require("../assets/images/gallery/pic16.jpeg"),
+  gallery17: require("../assets/images/gallery/pic17.jpeg"),
+  gallery18: require("../assets/images/gallery/pic18.jpeg"),
+  gallerylast: require("../assets/images/gallery/piclast.jpeg"),
 
   bloggrid1: require("../assets/images/blog/blog-grid/pic1.jpg"),
   bloggrid2: require("../assets/images/blog/blog-grid/pic2.jpg"),

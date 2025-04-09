@@ -10,28 +10,31 @@ const ContactUs = () => {
     lastName: false,
     email: false,
     phone: false,
-    message: false
+    message: false,
   });
 
   const validateForm = (formData) => {
     const errors = {
-      firstName: !formData.get('dzFirstName'),
-      lastName: !formData.get('dzLastName'),
-      email: !formData.get('dzEmail') || !/^\S+@\S+\.\S+$/.test(formData.get('dzEmail')),
-      phone: !formData.get('dzPhoneNumber'),
-      message: !formData.get('dzMessage') || formData.get('dzMessage').length < 10
+      firstName: !formData.get("dzFirstName"),
+      lastName: !formData.get("dzLastName"),
+      email:
+        !formData.get("dzEmail") ||
+        !/^\S+@\S+\.\S+$/.test(formData.get("dzEmail")),
+      phone: !formData.get("dzPhoneNumber"),
+      message:
+        !formData.get("dzMessage") || formData.get("dzMessage").length < 10,
     };
-    
+
     setFormErrors(errors);
-    return !Object.values(errors).some(error => error);
+    return !Object.values(errors).some((error) => error);
   };
 
   const sendEmail = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     const formData = new FormData(e.target);
-    
+
     if (!validateForm(formData)) {
       setIsLoading(false);
       return;
@@ -39,17 +42,17 @@ const ContactUs = () => {
 
     // Create template parameters with all required fields
     const templateParams = {
-      dzFirstName: formData.get('dzFirstName'),
-      dzLastName: formData.get('dzLastName'),
-      dzEmail: formData.get('dzEmail'),
-      dzPhoneNumber: formData.get('dzPhoneNumber'),
-      dzMessage: formData.get('dzMessage'),
-      year: new Date().getFullYear()
+      dzFirstName: formData.get("dzFirstName"),
+      dzLastName: formData.get("dzLastName"),
+      dzEmail: formData.get("dzEmail"),
+      dzPhoneNumber: formData.get("dzPhoneNumber"),
+      dzMessage: formData.get("dzMessage"),
+      year: new Date().getFullYear(),
     };
 
     emailjs
       .send(
-        "service_ocm3ngw", 
+        "service_ocm3ngw",
         "template_s8d8v5e",
         templateParams,
         "CGhdDRbtMZ3Y4sBlC"
@@ -61,7 +64,7 @@ const ContactUs = () => {
             title: "Success!",
             text: "Your message has been sent successfully.",
             icon: "success",
-            timer: 3000
+            timer: 3000,
           });
           e.target.reset();
         },
@@ -70,7 +73,7 @@ const ContactUs = () => {
           Swal.fire({
             title: "Error!",
             text: "Failed to send message. Please try again later.",
-            icon: "error"
+            icon: "error",
           });
         }
       )
@@ -137,6 +140,65 @@ const ContactUs = () => {
                   </ul>
                 </div>
 
+                {/* Social Media Icons - Now with white color */}
+                <div
+                  className="contact-social-icons"
+                  style={{ marginTop: "1px" }}
+                >
+                  <div className="dz-social-icon style-1">
+                    <ul
+                      style={{
+                        display: "flex",
+                        gap: "15px",
+                        padding: 0,
+                        listStyle: "none",
+                        marginBottom: "20px",
+                      }}
+                    >
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.facebook.com/darlington.masuku.54/about"
+                          rel="noreferrer"
+                          style={{ color: "white", fontSize: "18px", borderRadius: "50px" }}
+                        >
+                          <i className="fab fa-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.tiktok.com/@dcmasuku1"
+                          rel="noreferrer"
+                          style={{ color: "white", fontSize: "18px", borderRadius: "50px" }}
+                        >
+                          <i className="fab fa-tiktok"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.instagram.com/darlingcares/"
+                          rel="noreferrer"
+                          style={{ color: "white", fontSize: "18px", borderRadius: "50px" }}
+                        >
+                          <i className="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          target="_blank"
+                          href="https://www.linkedin.com/in/darlington-masuku-432ab035a"
+                          rel="noreferrer"
+                          style={{ color: "white", fontSize: "18px", borderRadius: "50px" }}
+                        >
+                          <i className="fa-brands fa-linkedin"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
                 <svg
                   width="250"
                   height="70"
@@ -185,11 +247,15 @@ const ContactUs = () => {
                         name="dzFirstName"
                         required
                         type="text"
-                        className={`form-control ${formErrors.firstName ? "is-invalid" : ""}`}
+                        className={`form-control ${
+                          formErrors.firstName ? "is-invalid" : ""
+                        }`}
                         placeholder="First Name"
                       />
                       {formErrors.firstName && (
-                        <div className="invalid-feedback">First name is required</div>
+                        <div className="invalid-feedback">
+                          First name is required
+                        </div>
                       )}
                     </div>
                   </div>
@@ -199,11 +265,15 @@ const ContactUs = () => {
                         name="dzLastName"
                         required
                         type="text"
-                        className={`form-control ${formErrors.lastName ? "is-invalid" : ""}`}
+                        className={`form-control ${
+                          formErrors.lastName ? "is-invalid" : ""
+                        }`}
                         placeholder="Last Name"
                       />
                       {formErrors.lastName && (
-                        <div className="invalid-feedback">Last name is required</div>
+                        <div className="invalid-feedback">
+                          Last name is required
+                        </div>
                       )}
                     </div>
                   </div>
@@ -213,12 +283,16 @@ const ContactUs = () => {
                         name="dzEmail"
                         required
                         type="email"
-                        className={`form-control ${formErrors.email ? "is-invalid" : ""}`}
+                        className={`form-control ${
+                          formErrors.email ? "is-invalid" : ""
+                        }`}
                         placeholder="Your Email Address"
                       />
                       {formErrors.email && (
                         <div className="invalid-feedback">
-                          {!form.current?.dzEmail?.value ? "Email is required" : "Please enter a valid email"}
+                          {!form.current?.dzEmail?.value
+                            ? "Email is required"
+                            : "Please enter a valid email"}
                         </div>
                       )}
                     </div>
@@ -229,11 +303,15 @@ const ContactUs = () => {
                         name="dzPhoneNumber"
                         required
                         type="tel"
-                        className={`form-control ${formErrors.phone ? "is-invalid" : ""}`}
+                        className={`form-control ${
+                          formErrors.phone ? "is-invalid" : ""
+                        }`}
                         placeholder="Phone"
                       />
                       {formErrors.phone && (
-                        <div className="invalid-feedback">Phone number is required</div>
+                        <div className="invalid-feedback">
+                          Phone number is required
+                        </div>
                       )}
                     </div>
                   </div>
@@ -243,12 +321,16 @@ const ContactUs = () => {
                         name="dzMessage"
                         rows="5"
                         required
-                        className={`form-control ${formErrors.message ? "is-invalid" : ""}`}
+                        className={`form-control ${
+                          formErrors.message ? "is-invalid" : ""
+                        }`}
                         placeholder="Message (minimum 10 characters)..."
                       ></textarea>
                       {formErrors.message && (
                         <div className="invalid-feedback">
-                          {!form.current?.dzMessage?.value ? "Message is required" : "Message must be at least 10 characters"}
+                          {!form.current?.dzMessage?.value
+                            ? "Message is required"
+                            : "Message must be at least 10 characters"}
                         </div>
                       )}
                     </div>
@@ -263,7 +345,11 @@ const ContactUs = () => {
                     >
                       {isLoading ? (
                         <>
-                          <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                          <span
+                            className="spinner-border spinner-border-sm me-2"
+                            role="status"
+                            aria-hidden="true"
+                          ></span>
                           <span>Sending...</span>
                         </>
                       ) : (

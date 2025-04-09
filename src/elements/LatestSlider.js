@@ -7,9 +7,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const dataBlog = [
-  {
-    image1: IMAGES.gallery,
-  },
+  // {
+  //   image1: IMAGES.gallery,
+  // },
   {
     image1: IMAGES.gallery1,
   },
@@ -45,6 +45,27 @@ const dataBlog = [
   },
   {
     image1: IMAGES.gallery12,
+  },
+  {
+    image1: IMAGES.gallery13,
+  },
+  {
+    image1: IMAGES.gallery14,
+  },
+  {
+    image1: IMAGES.gallery15,
+  },
+  {
+    image1: IMAGES.gallery16,
+  },
+  {
+    image1: IMAGES.gallery17,
+  },
+  {
+    image1: IMAGES.gallery18,
+  },
+  {
+    image1: IMAGES.gallerylast,
   },
 ];
 

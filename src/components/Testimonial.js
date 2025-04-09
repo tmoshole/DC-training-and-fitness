@@ -10,7 +10,7 @@ const testimonials = [
     name: "Sarah Johnson",
     role: "Fitness Enthusiast",
     rating: 5,
-    text: "When I started working with Darlington in 2023, I was overweight, constantly tired and lacked confidence in my body. From day one, he made me feel welcome and never judged me. His warm and approachable nature made it easy to open up about my struggles, and he tailored my workouts and diet to my needs. YearS later, I've not only lost weight but gained strength, energy, and a new sense of self. Darlington genuinely cares about his clients—he doesn't just train you, he walks every step of the journey with you. I'm forever grateful!",
+    text: "When I started working with Darlington in 2023, I was overweight, and constantly tired. He tailored my workouts and diet to my needs. Years later, I've not only lost weight but gained strength, energy, and a new sense of self. Darlington genuinely cares about his clients—he doesn't just train you, he walks every step of the journey with you. I'm forever grateful!",
   },
   {
     img: IMAGES.largeTestimonialPic2,
