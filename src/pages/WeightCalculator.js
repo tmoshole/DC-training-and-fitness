@@ -39,9 +39,7 @@ const WeightCalculator = () => {
   return (
     <>
       <div className="page-content ">
-        <section
-          className="content-inner overflow-hidden"
-        >
+        <section className="content-inner overflow-hidden">
           <div className="container">
             <div className="row justify-content-between align-items-center m-b20">
               <div className="col-lg-6">
@@ -50,6 +48,25 @@ const WeightCalculator = () => {
                   <p>
                     Calculate your BMI to understand your weight status and get
                     personalized health recommendations.
+                  </p>
+                  <p
+                    className="title"
+                    style={{
+                      color: "#bbb", // light gray
+                      fontSize: "0.8rem", // optional: match your existing sizing
+                      lineHeight: 1.5, // optional: for readability
+                    }}
+                  >
+                    While BMI (Body Mass Index) is a useful tool for estimating
+                    body fat and weight, it's not a perfect measure of health
+                    and has limitations. Learn more{" "}
+                    <a
+                      href="https://www.cdc.gov/bmi/faq/index.html#:~:text=Is%20BMI%20a%20good%20indicator,their%20BMI%20and%20body%20fat."
+                      target="_blank"
+                    >
+                      here
+                    </a>
+                    .
                   </p>
                 </div>
                 <form
@@ -120,8 +137,7 @@ const WeightCalculator = () => {
                             as="div"
                             className="select-dropdown-toggle"
                           >
-                            {selectBtn}{" "}
-                            <i className="fa-sharp fa-solid fa-caret-down"></i>
+                            {selectBtn}
                           </Dropdown.Toggle>
                           <Dropdown.Menu className="mt-2">
                             <Dropdown.Item onClick={() => setSelectBtn("Male")}>

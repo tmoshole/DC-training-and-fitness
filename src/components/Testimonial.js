@@ -20,6 +20,13 @@ const testimonials = [
     text: "I started training with Darlington in early 2024. As someone in my late 40s, I was looking to lose fat, improve mobility, and take better care of my heart health. I was hesitant at first, but Darlington immediately made me feel comfortable. He’s incredibly knowledgeable and adjusts every session to suit my abilities while still pushing me to improve. I’ve already lost weight, feel more flexible, and even my doctor is impressed with my progress. Darlington is not just a trainer—he’s a partner in your health journey",
   },
   {
+    img: IMAGES.largeTestimonialPic5,
+    name: "David Wilson",
+    role: "CEO",
+    rating: 5,
+    text: "Working with DC has completely transformed not only my body, but my confidence and my outlook on fitness. When I first walked into our sessions, I was self-conscious about my midsection and felt stuck in a cycle of workouts that never seemed to deliver the results I craved. DC took the time to learn my goals, my struggles, and even my schedule, then crafted a personalized training plan that challenged me without ever overwhelming me.",
+  },
+  {
     img: IMAGES.largeTestimonialPic3,
     name: "Emma Rodriguez",
     role: "Busy Mom",

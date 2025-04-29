@@ -56,6 +56,7 @@ export const IMAGES = {
   aboutgirl: require("../assets/images/about/girl.jpeg"),
   aboutman: require("../assets/images/about/man.png"),
   boxpic1: require("../assets/images/about/image-box/pic1.png"),
+  boxpic0: require("../assets/images/about/image-box/pic0.png"),
   boxpic2: require("../assets/images/about/image-box/pic22.png"),
   sliderpic1: require("../assets/images/main-slider/slider1/pic1.png"),
   footerbg: require("../assets/images/background/footer-bg.png"),
@@ -83,7 +84,7 @@ export const IMAGES = {
   portfolio7: require("../assets/images/portfolio/pic7.jpg"),
 
   // gallery images
-  // gallery: require("../assets/images/gallery/pic6.jpeg"),
+  gallery0: require("../assets/images/gallery/pic0.jpeg"),
   gallery1: require("../assets/images/gallery/pic1.png"),
   gallery2: require("../assets/images/gallery/pic2.jpeg"),
   gallery3: require("../assets/images/gallery/pic3.jpeg"),
@@ -186,6 +187,7 @@ export const IMAGES = {
   largeTestimonialPic2: require("../assets/images/testimonials/extralaarge/pic2.jpeg"),
   largeTestimonialPic3: require("../assets/images/testimonials/extralaarge/pic3.jpeg"),
   largeTestimonialPic4: require("../assets/images/testimonials/extralaarge/pic4.jpeg"),
+  largeTestimonialPic5: require("../assets/images/testimonials/extralaarge/pic5.jpeg"),
 
   avatarLargePic1: require("../assets/images/avatar/large/avatar1.png"),
   avatarLargePic2: require("../assets/images/avatar/large/avatar2.jpeg"),

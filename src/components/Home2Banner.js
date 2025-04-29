@@ -42,7 +42,6 @@ const Home2Banner = ({ open }) => {
             <img src={IMAGES.Slide2Hero} alt="" />
           </div>
         </div>
-        <img src={IMAGES.Slide2Starts} alt="" className="move-1" />
       </div>
     </>
   );

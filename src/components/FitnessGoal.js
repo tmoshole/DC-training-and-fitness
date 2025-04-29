@@ -61,24 +61,86 @@ const FitnessGoal = ({ isOpenModal }) => {
       </div>
       <div className="col-lg-6 m-b30">
         <div className="dz-media">
-          <div className="image-box">
-            <div className="video-bx1 h-auto w-auto overflow-visible">
-              <img src={IMAGES.boxpic1} alt="" />
+          {/* — Container for the two boxpic1 images — */}
+          <div
+            className="image-box-container"
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              gap: "20px", // Adds spacing between images
+              justifyContent: "center", // Centers items when they wrap
+            }}
+          >
+            {/* First boxpic1 image with overlay */}
+            <div
+              style={{
+                position: "relative",
+                flex: "1 1 calc(50% - 10px)", // Takes half width minus gap on large screens
+                minWidth: "250px", // Minimum width before wrapping
+              }}
+            >
+              <img
+                src={IMAGES.boxpic1}
+                alt=""
+                style={{ display: "block", width: "100%", height: "100%" }}
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "-50px",
+                  left: "33%",
+                  transform: "translateX(-50%)",
+                  backgroundColor: "rgba(255,255,255,0.9)",
+                  padding: "6px 12px",
+                  borderRadius: "4px",
+                  boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                <i className="flaticon-play text-primary"></i>{" "}
+                <strong>Qualified Trainer</strong>
+              </div>
             </div>
-            <div className="info-box">
-              <span>
-                <i className="flaticon-play text-primary"></i> Qualified Trainer
-              </span>
+
+            {/* Second boxpic1 image */}
+            <div
+              style={{
+                flex: "1 1 calc(50% - 10px)", // Takes half width minus gap on large screens
+                minWidth: "250px", // Minimum width before wrapping
+              }}
+            >
+              <img
+                src={IMAGES.boxpic0}
+                alt=""
+                style={{ display: "block", width: "100%", height: "100%" }}
+              />
             </div>
           </div>
-          <div className="image-box">
-            <img src={IMAGES.boxpic2} alt="" />
-            <div className="info-box">
-              <span>
-                <i className="flaticon-athletics text-primary"></i> Proffesional
-                Trainer
-              </span>
-            </div>
+
+          {/* — Professional Trainer caption BELOW the images — */}
+          <div
+            style={{
+              textAlign: "center",
+              marginTop: "12px",
+            }}
+          >
+            <span
+              style={{
+                display: "inline-block",
+                backgroundColor: "rgba(255,255,255,0.9)",
+                padding: "6px 12px",
+                borderRadius: "4px",
+                boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+              }}
+            >
+              <i className="flaticon-athletics text-primary"></i>{" "}
+              <strong>Professional Trainer</strong>
+            </span>
+          </div>
+
+          {/* — Second image (no caption) — */}
+          <div className="image-box" style={{ marginTop: "20px" }}>
+            <img src={IMAGES.boxpic2} alt="" style={{ width: "100%" }} />
           </div>
         </div>
       </div>

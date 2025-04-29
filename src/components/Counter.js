@@ -29,11 +29,11 @@ const Counter = () => {
 
                     </div>
                 </div>
-                <div className="col-lg-4 col-md-2 pt-2 d-md-block d-none">
+                {/* <div className="col-lg-4 col-md-2 pt-2 d-md-block d-none">
                     <div className="counter-media move-1">
                         <img src={IMAGES.counterPattern} alt="" />
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
