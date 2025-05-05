@@ -1,42 +1,41 @@
-:root {
-	/* Primary Colors */
-	--primary: #2caeba;           /* Vibrant teal */
-	--primary-hover: #1d9aa6;     /* Darker teal */
-	--primary-dark: #16818c;      /* Deep teal */
+:root{
+	
+	/* Primary */
+	--primary: #FF8139;
+	--primary-hover: #ff6106;
+	--primary-dark: #ed5600;
 	
 	/* Primary RGBA */
-	--rgba-primary-1: rgba(44, 174, 186, 0.1);
-	--rgba-primary-2: rgba(44, 174, 186, 0.2);
-	--rgba-primary-3: rgba(44, 174, 186, 0.3);
-	--rgba-primary-4: rgba(44, 174, 186, 0.4);
-	--rgba-primary-5: rgba(44, 174, 186, 0.5);
-	--rgba-primary-05: rgba(44, 174, 186, 0.05);
-	--rgba-primary-6: rgba(44, 174, 186, 0.6);
-	--rgba-primary-7: rgba(44, 174, 186, 0.7);
-	--rgba-primary-8: rgba(44, 174, 186, 0.8);
-	--rgba-primary-9: rgba(44, 174, 186, 0.9);
+	--rgba-primary-1: rgba(255,129,57,0.1);
+	--rgba-primary-2: rgba(255,129,57,0.2);
+	--rgba-primary-3: rgba(255,129,57,0.3);
+	--rgba-primary-4: rgba(255,129,57,0.4);
+	--rgba-primary-5: rgba(255,129,57,0.5);
+	--rgba-primary-05: rgba(255,129,57,0.05);
+	--rgba-primary-6: rgba(255,129,57,0.6);
+	--rgba-primary-7: rgba(255,129,57,0.7);
+	--rgba-primary-8: rgba(255,129,57,0.8);
+	--rgba-primary-9: rgba(255,129,57,0.9);
 	
-	/* Secondary Colors */
-	--secondary: #334e68;         /* Dark blue-gray */
-	--theme-text-color: #ffffff;  /* White */
-	--title: #243b53;            /* Dark slate blue */
+	/* Other */
+	--secondary: #232323;
+	--theme-text-color: #fff;
+	--title: #222222;
 	
-	/* Gradients */
-	--gradient: linear-gradient(89deg, #0f4c75 1.12%, #2caeba 44%);
-	--gradient-1: linear-gradient(90deg, #0f4c75 47.55%, #3282b8 100.15%);
-	--gradient-2: linear-gradient(90deg, #2caeba 0%, #0f4c75 100%);
-	--gradient-3: linear-gradient(180deg, var(--primary) 0%, #1d9aa6 100%);
+	/* Gradient */
+	--gradient: linear-gradient(89deg, #FF3C11 1.12%, #FF8139 44%);
+	--gradient-1: linear-gradient(90deg, #FF3F13 47.55%, #FF7F38 100.15%);
+	--gradient-2: linear-gradient(90deg, #FF8039 0%, #FF3F13 100%);	
+	--gradient-3: linear-gradient(180deg, var(--primary) 0%, #FF0000 100%);	
 	
 	/* Box Shadow */
-	--primary-shadow: linear-gradient(90deg, #3282b8 47.55%, #0f4c75 100.15%);
+	--primary-shadow: linear-gradient(90deg, #fcde3b 47.55%, #ebc600 100.15%);
 	
-	/* Theme Variables */
-	--theme3-bg-color: #1b262c;   /* Dark blue-black */
-	--theme3-secondary: #0f4c75;  /* Navy blue */
-	--theme3-secondary2: #bbe1fa; /* Light sky blue */
+	/* extra variable */
+	/* --theme2-bg-pattern1: url(../images/pattern/theme/bg-pattern1.svg); */
 	
-	/* Additional Color Variables */
-	--accent-light: #bbe1fa;
-	--accent-dark: #0a2e4a;
-	--text-muted: #486581;
-  }
+	--theme3-bg-color: #201916;
+	--theme3-secondary: #301f18;
+	--theme3-secondary2: #ffdd39;
+	
+}
