@@ -290,7 +290,7 @@ const Footer2 = () => {
             </div>
           </div>
         </div>
-        <img
+        {/* <img
           className="svg-shape-1 rotate-360"
           src={IMAGES.footercircle}
           alt=""
@@ -299,7 +299,7 @@ const Footer2 = () => {
           className="svg-shape-2 rotate-360"
           src={IMAGES.footercircle}
           alt=""
-        />
+        /> */}
       </footer>
     </>
   );

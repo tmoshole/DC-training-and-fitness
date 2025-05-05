@@ -151,7 +151,7 @@ function LatestSlider() {
           z-index: 10;
           width: 40px;
           height: 40px;
-          background: rgba(255, 129, 57, 0.9);
+          background: rgba(44, 174, 186, 0.9);
           border-radius: 50%;
           display: flex;
           align-items: center;
